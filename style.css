@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(249, 249, 248);
+}
+
+#nav p {
+    height: 65px;
+    background-color: rgb(2, 2, 24);
+    color: white;
+    font-size: xx-large;
+    font-family: "Bitcount Grid Double", system-ui;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.gamecontainer {
+    height: 100%;
+    display: flex;
+    background-color: rgb(6, 4, 49);
+    justify-content: space-evenly;
+    color: antiquewhite;
+    flex-wrap: wrap;
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 40px plum;
+
+}
+
+.container button {
+    background-color: rgb(6, 4, 49);
+    border: 5px solid cyan;
+    box-shadow:
+        0 0 5px rgb(197, 9, 235),
+        0 0 10px rgb(197, 9, 235),
+        0 0 15px rgb(197, 9, 235),
+        0 0 20px rgb(197, 9, 235);
+    transition: box-shadow 0.3s ease-in-out;
+    font-size: 12vw;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box:hover {
+    background-color: rgb(20, 11, 86);
+    box-shadow:
+        0 0 10px rgb(197, 9, 235),
+        0 0 20px rgb(197, 9, 235),
+        0 0 30px rgb(197, 9, 235),
+        0 0 40px rgb(197, 9, 235);
+
+
+}
+
+.msg-container {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    font-size: xx-large;
+    visibility: hidden;
+}
+
+#win-msg {
+    color: black;
+    background-color: chartreuse;
+    /* border: 8px solid rgba(33, 45, 113, 0.566); */
+    box-shadow: 0 0 30px 10px darkblue;
+    animation: bounce 0.6s ease infinite;
+}
+
+.information button {
+    cursor: pointer;
+    size: 20vw;
+}
+
+#imgbox {
+    height: min-content;
+    width: fit-content;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newgame-btn {
+    padding: 0.2vw;
+    font-family: "Libertinus Mono", monospace;
+    color: whitesmoke;
+    background-color: black;
+    font-size: xx-large;
+    border-radius: 1vw;
+    box-shadow: 0 0 20px yellow;
+    cursor: pointer;
+    margin-top: 2vw;
+}
+
+#reset {
+    font-weight: bolder;
+    font-family: "Libertinus Mono", monospace;
+    padding: 0.1%;
+    margin-top: 0.2vw;
+    color: black;
+    background-color: yellow;
+    box-shadow: 0 0 10px yellowgreen;
+    font-size: xx-large;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: rgba(255, 255, 0, 0.811);
+}
+
+#Turn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    border: 0.3vw solid violet;
+    background-color: wheat;
+    color: darkred;
+    font-weight: bolder;
+    text-shadow: 0 0 10px gold;
+}
+
+.box.bt-0 {
+    border-top: 0;
+}
+
+.box.bl-0 {
+    border-left: 0;
+}
+
+.box.br-0 {
+    border-right: 0;
+}
+
+.box.bb-0 {
+    border-bottom: 0;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
