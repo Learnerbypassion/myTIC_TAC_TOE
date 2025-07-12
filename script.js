@@ -84,7 +84,7 @@ const checkWinner = () => {
                 console.log("winner", pos1val);
                 document.getElementById("imgbox").style.visibility = "visible";
                 document.getElementById("win-msg").style.visibility = "visible";
-                document.getElementById("win-msg").innerHTML = `<h1>Congratulation, The Winner-${pos1val}</h1>`;
+                document.getElementById("win-msg").innerHTML = `<h5>Congratulation, The Winner-${pos1val}<h5>`;
                 document.getElementById("newgame-btn").style.visibility = "visible";
                 win.play();
                 document.getElementById("Turn").innerText = "";
