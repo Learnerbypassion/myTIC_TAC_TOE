@@ -103,8 +103,8 @@ body {
 }
 
 #imgbox {
-    height: min-content;
-    width: fit-content;
+    height: 69vmin;
+    width: 1vmin;
     visibility: hidden;
     display: flex;
     justify-content: center;
